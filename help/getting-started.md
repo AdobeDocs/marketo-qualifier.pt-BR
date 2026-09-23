@@ -21,7 +21,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Depois que a Adobe provisionar o Qualificador Marketo para sua organização, um
 
 Os grupos de usuários no Adobe Admin Console são usados para controlar o acesso ao Marketo Qualifier. Ambos os grupos devem ser criados antes que os usuários possam entrar.
 
-Consulte a [documentação do Adobe Admin Console](https://helpx.adobe.com/br/business/enterprise/users/users-and-groups/user-groups.html) para obter informações sobre a configuração de grupos.
+Consulte a [documentação do Adobe Admin Console](https://helpx.adobe.com/business/enterprise/users/users-and-groups/user-groups.html) para obter informações sobre a configuração de grupos.
 
 >[!PREREQUISITES]
 >
@@ -58,7 +58,7 @@ Essas etapas são executadas no Adobe Admin Console.
 1. Abra **[!UICONTROL Perfis de produto atribuídos]** e selecione **[!UICONTROL Atribuir perfil]**.
 1. Selecione **[!UICONTROL Adobe Experience Platform]**.
 1. Selecione o perfil de produto **[!UICONTROL Acesso integral à Produção Padrão]**, selecione **[!UICONTROL Aplicar]** e **[!UICONTROL Salvar]**.
-1. Abra **[!UICONTROL Usuários]** e selecione **[!UICONTROL Adicionar usuários]** para adicionar todos que precisem de acesso ao Qualificador do Marketo.
+1. Para adicionar todos que precisam de acesso ao Marketo Qualifier, abra **[!UICONTROL Usuários]** e selecione **[!UICONTROL Adicionar usuários]**.
 
 ### Administradores do Marketo Qualifier
 
@@ -169,7 +169,7 @@ Um administrador do Microsoft Dynamics 365 ou Azure registra um aplicativo e o a
 
 ### Importar campos do CRM
 
-Depois de conectar o CRM, configure o mapeamento de entrada para determinar quais campos do CRM aparecem no Marketo Qualifier. No cartão do CRM conectado, selecione **[!UICONTROL Gerenciar]** para abrir o **[!UICONTROL Mapeamento de entrada]** e adicione uma seção para cada tipo de entidade cujos campos você deseja importar.
+Depois de conectar o CRM, configure o mapeamento de entrada para determinar quais campos do CRM aparecem no Marketo Qualifier. Para abrir o **[!UICONTROL Mapeamento de entrada]**, selecione **[!UICONTROL Gerenciar]** no cartão do CRM conectado e adicione uma seção para cada tipo de entidade cujos campos você deseja importar.
 
 Consulte [Mapear campos do CRM (mapeamento de entrada)](integrations.md#map-crm-fields-inbound-mapping) para obter as etapas completas, incluindo como disponibilizar campos importados como filtros.
 

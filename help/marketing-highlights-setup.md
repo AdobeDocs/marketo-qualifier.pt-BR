@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '680'
 ht-degree: 3%
 ---
 
@@ -49,14 +49,14 @@ Para criar as credenciais:
 
 1. Acesse o [Adobe Developer Console](https://developer.adobe.com/console/) e faça logon com seu Adobe ID.
 1. Selecione **[!UICONTROL Criar novo projeto]** ou abra um projeto existente.
-1. Selecione **[!UICONTROL Editar projeto]**, renomeie o projeto para algo identificável, como `Marketo Qualifier Marketing Highlights`, e selecione **[!UICONTROL Salvar]**.
+1. Para renomear o projeto, selecione **[!UICONTROL Editar projeto]**, insira um nome identificável como `Marketo Qualifier Marketing Highlights` e selecione **[!UICONTROL Salvar]**.
 1. Selecione **[!UICONTROL Adicionar API]**, selecione **[!UICONTROL API Experience Platform]** e **[!UICONTROL Avançar]**.
 1. Escolha **[!UICONTROL OAuth Server-to-Server]** como o tipo de autenticação e selecione **[!UICONTROL Avançar]**.
 
    O **[!UICONTROL OAuth Server-to-Server]** permite que o [!DNL Marketo] chame a API do Qualificador do Marketo diretamente do servidor, sem exigir que uma pessoa entre.
 
 1. Insira um nome de credencial com 45 caracteres ou menos, como `Marketo Qualifier Marketing Highlights Creds`.
-1. Selecione o perfil de produto a ser associado e selecione **[!UICONTROL Salvar API configurada]**.
+1. Para associar o perfil de produto, selecione-o e, em seguida, selecione **[!UICONTROL Salvar API configurada]**.
 1. Em **[!UICONTROL Credenciais conectadas]**, abra a credencial **[!UICONTROL servidor para servidor OAuth]**. Selecione **[!UICONTROL Recuperar segredo do cliente]** e copie a **[!UICONTROL ID do Cliente]** e o **[!UICONTROL Segredo do Cliente]**. Você usa estes valores na [Parte C](#part-c-configure-the-marketo-webhook).
 
 >[!WARNING]
@@ -67,9 +67,9 @@ Para criar as credenciais:
 
 Você precisa de três valores para a [Parte C](#part-c-configure-the-marketo-webhook):
 
-* **URL do Ponto de Extremidade** — O endereço de webhook do Qualificador do Marketo para sua região.
+* **URL do Ponto de Extremidade** — O endereço do webhook do Marketo Qualifier para sua região.
 * **imsOrg ID** — O identificador da sua organização no Adobe Identity Management System (IMS), no formato `{ORG_ID}@AdobeOrg`.
-* **Nome da sandbox** — O nome da sandbox do AEP exatamente como aparece no URL do Qualificador do Marketo (o valor `sname`), não o nome de exibição mostrado na interface. Use o valor de URL em minúsculas, por exemplo `prod`, não `Prod`.
+* **Nome da sandbox** — O nome da sandbox do AEP exatamente como aparece no URL do Marketo Qualifier (o valor `sname`), não o nome de exibição mostrado na interface. Use o valor de URL em minúsculas, por exemplo `prod`, não `Prod`.
 
 | Região | URL do ponto de extremidade do Webhook |
 | --- | --- |

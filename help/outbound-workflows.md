@@ -1,6 +1,6 @@
 ---
 title: Criar e gerenciar fluxos de trabalho de saída
-description: Saiba como criar, compartilhar, revisar e gerenciar fluxos de trabalho de saída gerados por IA no Adobe Marketo Qualifier para executar cadências de alcance orientadas por metas.
+description: Saiba como criar, compartilhar, revisar e gerenciar fluxos de trabalho de saída gerados por IA no [!DNL Adobe Marketo Qualifier] para executar cadências de alcance orientadas por metas.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2271'
 ht-degree: 0%
 ---
 
@@ -67,12 +67,14 @@ Os administradores podem atribuir o Fluxo de trabalho de saída a um colega de e
 
 A meta define o resultado pretendido e orienta o direcionamento, a cadência e a geração de email.
 
-1. Selecione **[!UICONTROL Iniciar do zero]** para escrever sua própria meta ou selecione **[!UICONTROL Iniciar do modelo]** para usar um modelo salvo.
+1. Para gravar sua própria meta, selecione **[!UICONTROL Iniciar do zero]** ou, para usar um modelo salvo, selecione **[!UICONTROL Iniciar do modelo]**.
 
-1. Selecione uma das **[!UICONTROL Metas recomendadas]** correspondentes à sua empresa. Cada recomendação inclui uma breve explicação do por que ela se encaixa. Selecione uma recomendação para preencher a meta, selecione **[!UICONTROL Exibir tudo]** para navegar pelo conjunto completo de recomendações ou insira sua própria meta. Você também pode escolher na lista **[!UICONTROL Metas populares]**.
+1. Selecione uma das **[!UICONTROL Metas recomendadas]** correspondentes à sua empresa. Cada recomendação inclui uma breve explicação do por que ela se encaixa. Para preencher a meta, selecione uma recomendação. Para procurar o conjunto completo de recomendações, selecione **[!UICONTROL Exibir todas]** ou insira sua própria meta. Você também pode escolher na lista **[!UICONTROL Metas populares]**.
 1. Selecionar **[!UICONTROL Próximo: Direcionamento]**.
 
 Declarar um resultado específico na meta. Por exemplo, digite `Book a 15-minute discovery call with marketing leaders evaluating campaign automation` em vez de `Promote campaign automation`.
+
+A IA preserva os requisitos na meta exatamente nos pontos de contato gerados. Inclua frases exatas, linhas de abertura ou fechamento necessárias, sessões e datas nomeadas ou uma estrutura específica quando o conteúdo gerado precisar preservá-las.
 
 ### Etapa 2: configurar filtros de direcionamento
 
@@ -80,12 +82,29 @@ Os filtros de direcionamento definem quais clientes potenciais são qualificados
 
 ![Filtros de direcionamento](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
 
-1. Selecione a seta para baixo para abrir a lista **[!UICONTROL Adicionar um filtro]** e selecione um filtro.
+Descreva seu cliente potencial ideal em linguagem natural. Por exemplo, digite `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] converte a descrição em critérios de direcionamento que você pode revisar e refinar.
+
+1. Para abrir a lista **[!UICONTROL Adicionar um filtro]**, selecione a seta para baixo e um filtro.
 
 1. Defina valores para o filtro.
 1. Adicione mais filtros se precisar restringir o público.
 
 1. Selecionar **[!UICONTROL Próximo: Gerar pontos de contato]**.
+
+O direcionamento pode usar o tipo de atividade, a pontuação, a classificação e outros atributos disponíveis. Combine os critérios com [!DNL AND] ou [!DNL OR] e use operadores como &quot;é igual a&quot;, &quot;contém&quot;, &quot;maior que&quot;, &quot;menor que&quot; e &quot;entre&quot;.
+
+### Inscrever clientes potenciais dos Destaques de marketing automaticamente
+
+Um fluxo de trabalho de saída pode avaliar a atividade de Destaques de marketing ao vivo em relação aos critérios de direcionamento. Quando a atividade corresponde, [!DNL Marketo Qualifier] resolve o proprietário do CRM do cliente potencial por email e inscreve o cliente potencial somente em um fluxo de trabalho qualificado que pertença a esse representante.
+
+A inscrição automática segue esta sequência:
+
+1. Um representante define os critérios de direcionamento do workflow.
+1. A atividade [!DNL Marketo] ao vivo chega para um cliente potencial.
+1. [!DNL Marketo Qualifier] resolve o proprietário do cliente potencial do Salesforce ou do Microsoft Dynamics e avalia a atividade em relação aos fluxos de trabalho qualificados do proprietário.
+1. Quando os critérios forem atendidos, o cliente potencial será inscrito e o alcance externo começará.
+
+Se outro representante já estiver contatando o cliente potencial, [!DNL Marketo Qualifier] exibe um aviso antes do início do alcance duplicado.
 
 ### Etapa 3: gerar e revisar pontos de contato
 
@@ -147,7 +166,7 @@ Salvar abre a visualização de seleção de cliente potencial com os filtros de
 
 1. Ajuste os filtros aqui se precisar expandir ou restringir a lista.
 1. Selecione prospetos usando as caixas de seleção.
-1. Selecione **[!UICONTROL Avançar: revise os pontos de contato]** para iniciar a geração de email por cliente potencial.
+1. Para iniciar a geração de email por cliente potencial, selecione **[!UICONTROL Próximo: Pontos de contato de revisão]**.
 
 A IA gera um email personalizado para cada cliente potencial selecionado e ponto de contato de email. Os pontos de contato de telefone e do LinkedIn In InMail permanecem como etapas programadas. Para continuar trabalhando durante a geração, selecione **[!UICONTROL Notificar quando estiver pronto]**.
 
@@ -159,14 +178,14 @@ Os emails também podem ser gerados no idioma do cliente potencial, com saudaç�
 
 ## Revisar e refinar emails gerados
 
-Quando a geração termina, a exibição detalhada do Fluxo de trabalho de saída solicita que você revise os rascunhos. O Adobe Marketo Qualifier não enviará um email até que você o aprove.
+Quando a geração termina, a exibição detalhada do Fluxo de trabalho de saída solicita que você revise os rascunhos. [!DNL Marketo Qualifier] não envia email até que você o aprove.
 
 1. Na exibição detalhada do Fluxo de Trabalho de Saída, selecione **[!UICONTROL Revisar rascunhos]** no banner.
 1. A etapa **[!UICONTROL Pontos de contato de revisão]** tem duas guias:
    * **[!UICONTROL Pronto para Revisão]**—Emails que terminaram de ser gerados.
    * **[!UICONTROL Gerando]**—Emails que ainda estão sendo gravados.
-1. Na lista de clientes potenciais à esquerda, selecione um nome para carregar os pontos de contato do cliente potencial à direita.
-1. Use a divisa (**>**) em um ponto de contato para expandir e ler toda a linha de assunto e o corpo.
+1. Para carregar os pontos de contato de um cliente potencial à direita, selecione o nome do cliente potencial na lista à esquerda.
+1. Para expandir um ponto de contato e ler toda a linha de assunto e o corpo, use sua divisa (**>**).
 
 ### Leia o raciocínio sobre IA
 
@@ -176,7 +195,7 @@ Para cada email gerado, o **[!UICONTROL Raciocínio]** explica como a IA criou e
 
 Para pequenas alterações de texto ou tom:
 
-1. No ponto de contato expandido, selecione o ícone **[!UICONTROL Editar]** para abrir o editor.
+1. Para abrir o editor, selecione o ícone **[!UICONTROL Editar]** no ponto de contato expandido.
 1. Edite a linha de assunto ou o corpo.
 1. Selecione **[!UICONTROL Salvar]**.
 
@@ -208,13 +227,15 @@ Os emails aprovados são enviados de acordo com os dias selecionados, a janela d
 
 ## Compartilhar um fluxo de trabalho de saída
 
-Cada Fluxo de Trabalho de Saída tem uma configuração **[!UICONTROL Permissões]**. Os fluxos de trabalho de saída são **[!UICONTROL privados]** por padrão. O proprietário pode selecionar **[!UICONTROL Compartilhado com todos]** para disponibilizar um Fluxo de Trabalho de Saída para a equipe.
+Cada Fluxo de Trabalho de Saída tem uma configuração **[!UICONTROL Permissões]**. Os fluxos de trabalho de saída são **[!UICONTROL privados]** por padrão. Para disponibilizar um Fluxo de Trabalho de Saída para a equipe, o proprietário pode selecionar **[!UICONTROL Compartilhado com todos]**.
 
 >[!CAUTION]
 >
 >O compartilhamento é permanente. Depois que um Fluxo de Trabalho de Saída é definido como **[!UICONTROL Compartilhado com todos]**, ele não pode ser alterado novamente para **[!UICONTROL Particular]**.
 
 Em um Fluxo de trabalho de saída compartilhado, os colegas de equipe podem inscrever seus próprios prospetos. Cada pessoa pode gerenciar ou pausar somente os clientes potenciais aos quais se inscreveu, inclusive ao usar ações em massa. Somente o proprietário do Fluxo de trabalho de saída pode editar configurações no nível do plano, incluindo programação, fuso horário e cadência. Essas configurações são somente leitura para colegas de equipe.
+
+Ao inscrever prospetos em um Fluxo de trabalho de saída compartilhado, escolha se o email é enviado como o proprietário do fluxo de trabalho ou como cada representante atribuído do lead.
 
 Use esses filtros para manter o foco dos fluxos de trabalho de saída e resultados compartilhados:
 
