@@ -1,6 +1,6 @@
 ---
 title: Gerenciar integrações
-description: Saiba como conectar o Outlook, gerenciar conexões de CRM, mapear campos de entrada, sincronizar atividades e configurar a recusa de email global no Adobe Marketo Qualifier.
+description: Saiba como conectar o Outlook, gerenciar conexões do CRM, mapear campos de entrada, sincronizar atividades e configurar a recusa de email global no Adobe Marketo Qualifier.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User, Admin
 product_v2:
@@ -18,15 +18,15 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1383'
 ht-degree: 1%
 ---
 
 # Integrações
 
-Conecte o Outlook para enviar emails, reconhecer respostas de clientes potenciais e agendar reuniões. Para disponibilizar leads, contatos, contas, oportunidades, atividades e proprietários para os Workflows de saída e do Account Qualification Agent (AQA), também é possível conectar o Adobe Marketo Qualifier ao Salesforce ou Microsoft Dynamics 365. O Marketo Qualifier lê os dados do CRM, pode gravar atividades de alcance geral e status de recusa no CRM e pode sincronizar atividades de alcance geral com o Marketo. Caso contrário, ela não modificará os registros do CRM.
+Conecte o Outlook para enviar emails, reconhecer respostas de clientes potenciais e agendar reuniões. Para disponibilizar clientes potenciais, contatos, contas, oportunidades, atividades e proprietários para o Account Qualification Agent (AQA) e para Workflows de saída, você também pode conectar o Adobe Marketo Qualifier ao Salesforce ou Microsoft Dynamics 365. O Marketo Qualifier lê os dados do CRM, pode gravar atividades de alcance geral e status de recusa no CRM e pode sincronizar atividades de alcance geral com o Marketo. Caso contrário, ela não modificará os registros do CRM.
 
 Este artigo explica como conectar o Outlook, gerenciar uma conexão de CRM, mapear campos, sincronizar atividades e configurar a opção de não participação de email. Para conectar um CRM pela primeira vez, consulte [Introdução](getting-started.md#connect-your-crm).
 
@@ -42,9 +42,9 @@ Cada representante conecta sua própria conta do Outlook:
 1. Faça logon com sua conta da Microsoft.
 1. Revise e aprove o acesso solicitado.
 
-A conexão permite que o Qualificador da Marketo envie de sua caixa de correio, reconheça quando um cliente potencial responde e agende reuniões em seu calendário.
+A conexão permite que o Marketo Qualifier envie de sua caixa de correio, reconheça quando um cliente potencial responde e agende reuniões em seu calendário.
 
-Ao se conectar, você aprova o acesso que permite ao Qualificador do Marketo:
+Ao se conectar, você aprova o acesso que permite ao Marketo Qualifier:
 
 * Reconhecer respostas de clientes potenciais.
 * Crie e envie emails em seu nome.
@@ -91,7 +91,7 @@ Um cartão não configurado mostra **[!UICONTROL Conectar]**. Um cartão configu
 
 ### Conectar ou editar uma conexão
 
-1. No cartão do CRM, selecione **[!UICONTROL Conectar]** ou **[!UICONTROL Mais]** > **[!UICONTROL Editar configuração]** para atualizar uma conexão existente.
+1. Para criar uma conexão, selecione **[!UICONTROL Conectar]** no cartão do CRM. Para atualizar uma conexão existente, selecione **[!UICONTROL Mais]** > **[!UICONTROL Editar configuração]**.
 1. Insira as credenciais do administrador do CRM.
 
    >[!BEGINTABS]
@@ -119,7 +119,7 @@ Se o Marketo Qualifier rejeitar as credenciais, ele identificará a causa, como 
 ### Desconectar uma conexão
 
 1. No cartão do CRM conectado, selecione **[!UICONTROL Mais]** > **[!UICONTROL Desconectar]**.
-1. Revise o aviso e selecione **[!UICONTROL Desconectar]** para confirmar.
+1. Revise o aviso. Para confirmar, selecione **[!UICONTROL Desconectar]**.
 
 >[!WARNING]
 >
@@ -127,7 +127,7 @@ Se o Marketo Qualifier rejeitar as credenciais, ele identificará a causa, como 
 
 ## Mapear campos do CRM (mapeamento de entrada) {#map-crm-fields-inbound-mapping}
 
-O mapeamento de entrada controla quais campos do CRM o Qualificador do Marketo importa e onde eles aparecem. Os campos são agrupados em seções e cada seção pertence a um tipo de entidade.
+O mapeamento de entrada controla quais campos do CRM o Marketo Qualifier importa e onde eles aparecem. Os campos são agrupados em seções e cada seção pertence a um tipo de entidade.
 
 ![Mapeamento de entrada](assets/crm-conn-salesforce.png){width="800" zoomable="yes"}
 
@@ -146,7 +146,7 @@ O mapeamento de entrada controla quais campos do CRM o Qualificador do Marketo i
    | **[!UICONTROL Oportunidades]** | Os detalhes da oportunidade da conta. |
 
 1. Insira um **[!UICONTROL Nome da seção]** e uma **[!UICONTROL Descrição]** opcional. Em seguida, selecione **[!UICONTROL Próximo]**.
-1. Na etapa **[!UICONTROL Adicionar campo]**, procure e selecione os campos do CRM a serem importados. Em seguida, selecione **[!UICONTROL Próximo]**. Cada campo mostra seu **[!UICONTROL Nome para exibição]**, **[!UICONTROL Nome do campo]** e **[!UICONTROL Tipo de dados]**.
+1. Na etapa **[!UICONTROL Adicionar campo]**, para importar campos do CRM, procure por e selecione-os. Em seguida, para continuar, selecione **[!UICONTROL Avançar]**. Cada campo mostra seu **[!UICONTROL Nome para exibição]**, **[!UICONTROL Nome do campo]** e **[!UICONTROL Tipo de dados]**.
 1. Para as seções **[!UICONTROL Clientes Potenciais]**, **[!UICONTROL Contatos]** e **[!UICONTROL Oportunidades]**, ative **[!UICONTROL Filtrável]** para cada campo que os representantes precisam na lista [Clientes Potenciais](prospects.md).
 
    Um campo não pode se tornar filtrável se o tipo de dados não for compatível com a filtragem ou se já estiver sendo usado em outra seção.

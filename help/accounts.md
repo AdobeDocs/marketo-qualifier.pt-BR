@@ -14,9 +14,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 
@@ -50,7 +50,7 @@ A guia **[!UICONTROL Detalhes]** fornece um instantâneo da conta e seu pipeline
 O cartão de visão geral na parte superior da guia identifica a conta e resume seu valor:
 
 * O nome e a região da conta
-* **Receita anual recorrente (ARR)** — A receita anual recorrente de todas as assinaturas ativas. Selecione **[!UICONTROL Exibir todos]** para analisar a ARR por produto na caixa de diálogo **[!UICONTROL Receita recorrente anual]**.
+* **Receita anual recorrente (ARR)** — A receita anual recorrente de todas as assinaturas ativas. Para revisar a ARR por produto na caixa de diálogo **[!UICONTROL Receita Recorrente Anual]**, selecione **[!UICONTROL Exibir Tudo]**.
 * Estatísticas de conta, incluindo oportunidade em aberto e contagens de contato e o valor do pipeline
 
 ### Resumo da visão geral da conta
@@ -63,7 +63,7 @@ Use os botões abaixo da visão geral para alternar entre visualizações de con
 
 | Exibir | O que ele mostra |
 | --- | --- |
-| **[!UICONTROL Oportunidades]** | Abra oportunidades vinculadas à conta, com campos-chave para cada uma. Selecione **[!UICONTROL Exibir tudo]** para ver a lista completa em uma tabela. Detalhes da oportunidade, como estágio, tipo e data de fechamento, também podem ser usados para filtrar os contatos da conta em **[!UICONTROL Meus Contatos da Oportunidade]** quando um administrador torna esses campos filtráveis. |
+| **[!UICONTROL Oportunidades]** | Abra oportunidades vinculadas à conta, com campos-chave para cada uma. Para ver a lista completa em uma tabela, selecione **[!UICONTROL Exibir tudo]**. Detalhes da oportunidade, como estágio, tipo e data de fechamento, também podem ser usados para filtrar os contatos da conta em **[!UICONTROL Meus Contatos da Oportunidade]** quando um administrador torna esses campos filtráveis. |
 | **[!UICONTROL Membros Principais]** | Os contatos mais envolvidos da conta, classificados por envolvimento. Cada contato mostra o título do cargo, o endereço de email, a pontuação de engajamento e o indicador de urgência. |
 | **[!UICONTROL Dados de intenção]** | Sinais de intenção de compra para a conta, como os produtos e tópicos que a conta está pesquisando. |
 | **[!UICONTROL Membros da equipe de conta]** | Pessoas atribuídas à conta, com seu email, cargo, território e grupo de produtos. |
@@ -78,7 +78,7 @@ Na exibição **[!UICONTROL Membros Principais]**, execute uma destas ações pa
 
 A guia **[!UICONTROL Pesquisa de Conta]** contém três áreas:
 
-* **[!UICONTROL Categorias de pesquisa]**—Tópicos de pesquisa. Selecione uma categoria para exibir sua pesquisa no painel central.
+* **[!UICONTROL Categorias de pesquisa]**—Tópicos de pesquisa. Para exibir a pesquisa de uma categoria no painel central, selecione a categoria.
 * **Conteúdo de pesquisa** — cartões de pesquisa gerados por IA agrupados por categoria. Um cartão pode incluir o domínio de origem e as datas em que o sinal foi detectado pela primeira e última vez.
 * **[!UICONTROL Notícias recentes]**—Notícias atuais sobre a conta, incluindo datas, marcas e links de origem.
 

@@ -1,6 +1,6 @@
 ---
-title: Tarefas no Adobe Marketo Qualifier
-description: Saiba como processar tarefas de alcance manual e revisar clientes em potencial sugeridos pelo agente na fila de tarefas do Adobe Marketo Qualifier.
+title: Tarefas em [!DNL Adobe Marketo Qualifier]
+description: Saiba como processar tarefas de alcance manual e revisar clientes em potencial sugeridos por agente na fila de tarefas do [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/MbTN1r-ARrW-XYtdIS-KZT7K1Lk-B3GihT8iXL60GrQ'
@@ -12,9 +12,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '1086'
 ht-degree: 0%
 ---
 
@@ -45,7 +45,7 @@ As tarefas manuais estão vinculadas às etapas do Fluxo de trabalho de saída e
 
 * **[!UICONTROL LinkedIn InMail]** — Criado quando uma cadência atinge uma etapa do LinkedIn InMail. O painel de trabalho mostra o conteúdo a ser copiado e enviado do LinkedIn. Expanda **[!UICONTROL Razão da IA]** para analisar a razão.
 
-* **[!UICONTROL Revisão de email]**—Criada após o Adobe Marketo Qualifier gerar emails personalizados de um cliente potencial. Selecione **[!UICONTROL Revisar emails]** para revisar e aprovar os rascunhos antes de o alcance externo começar. Consulte [Revisar e refinar emails gerados](outbound-workflows.md#review-and-refine-generated-emails).
+* **[!UICONTROL Revisão de Email]**—Criada depois de [!DNL Adobe Marketo Qualifier] gerar emails personalizados de um cliente potencial. Para revisar e aprovar os rascunhos antes do início do alcance, selecione **[!UICONTROL Revisar emails]**. Consulte [Revisar e refinar emails gerados](outbound-workflows.md#review-and-refine-generated-emails).
 
 ![Revisão de email](assets/tasks-review.png)
 
@@ -83,7 +83,7 @@ A barra de ferramentas acima da lista controla quais tarefas são exibidas e em 
 * **[!UICONTROL Classificar]** — Classificar por data de vencimento ou data de criação. A ordem de classificação também determina a ordem em que a fila avança.
 * **[!UICONTROL Pesquisar tarefas]** — Localize tarefas por nome de cliente potencial, nome de empresa ou Fluxo de Trabalho de Saída. A pesquisa se aplica com filtros ativos.
 
-Filtros ativos aparecem como chips abaixo da barra de ferramentas. Selecione **[!UICONTROL Limpar tudo]** para redefini-los.
+Filtros ativos aparecem como chips abaixo da barra de ferramentas. Para redefini-los, selecione **[!UICONTROL Limpar tudo]**.
 
 ### Status da tarefa
 
@@ -104,7 +104,7 @@ As tarefas concluídas, ignoradas e canceladas são finais. Suas ações não es
 
 A guia **[!UICONTROL Sugestões do agente]** lista os clientes potenciais que correspondem aos critérios de direcionamento de um Fluxo de Trabalho de Saída e são recomendados para inscrição. Para ativar as recomendações, consulte [Fluxos de Trabalho de Saída](outbound-workflows.md).
 
-Selecione uma sugestão para revisá-la no painel de trabalho:
+Para revisar uma sugestão no painel de trabalho, selecione-a:
 
 * Um selo de recenticidade marca cada sugestão como **[!UICONTROL Nova]** ou **[!UICONTROL Anterior]**.
 * A tabela **[!UICONTROL Clientes potenciais recomendados]** ou **[!UICONTROL Contatos recomendados]** lista os clientes potenciais propostos com colunas para **[!UICONTROL Nome]**, **[!UICONTROL Título]**, **[!UICONTROL Conta]**, **[!UICONTROL Status]**, **[!UICONTROL Email]** e **[!UICONTROL Última atualização]**.
@@ -116,6 +116,23 @@ Duas ações estão disponíveis:
 
 A guia **[!UICONTROL Sugestões do agente]** inclui os filtros de status **[!UICONTROL Atual]**, **[!UICONTROL Concluído]** e **[!UICONTROL Cancelado]**, um filtro de Fluxo de Trabalho de Saída e a classificação por data de criação.
 
+### Responder a um cliente potencial com uma sugestão de agente
+
+Quando um cliente potencial responde a um email, [!DNL Marketo Qualifier] pode rascunhar uma resposta na thread e adicioná-la como uma tarefa em **[!UICONTROL Sugestões do agente]**. O rascunho usa o contexto relevante de:
+
+* O thread de email completo, não apenas a mensagem mais recente.
+* Material adicional e pesquisa de produto do Centro de conhecimento.
+* Sinais da conta, como notícias recentes, envolvimento de marketing e atividade de CRM.
+* Seu [contexto de rascunho de email](profile-settings.md#email-drafting-context) foi salvo.
+
+O assistente adapta a resposta à intenção do cliente potencial. Por exemplo, ele pode oferecer horários por meio do link de reserva para uma solicitação de reunião, reforçar o valor quando o cliente potencial estiver interessado, responder a uma pergunta sobre o produto em seu material de apoio, compartilhar um ativo relevante, solucionar uma objeção com um diferencial ou usar uma resposta de baixa pressão quando o cliente potencial quiser adiar.
+
+Mensagens sobre preços, requisitos legais ou de segurança, respostas hostis e solicitações pouco claras permanecem com o representante para uma resposta pessoal.
+
+1. Abra a sugestão de resposta e revise o thread completo e a resposta de rascunho.
+1. Para criar outro rascunho, edite a resposta ou selecione **[!UICONTROL Gerar com IA]**.
+1. Para enviar a resposta e continuar o Fluxo de Trabalho de Saída do cliente potencial, selecione **[!UICONTROL Aprovar e enviar]**.
+
 ## Concluir tarefas de um fluxo de trabalho de saída
 
 Na exibição **[!UICONTROL Clientes Potenciais Envolvidos]** de um Fluxo de Trabalho de Saída, um ponto de contato manual fornece as mesmas opções de **[!UICONTROL Marcar como concluído]**, **[!UICONTROL Ignorar]** e anotações. Concluir uma tarefa lá também atualiza seu status na página **[!UICONTROL Tarefas]**. Consulte [Fluxos de Trabalho de Saída](outbound-workflows.md).
@@ -124,7 +141,7 @@ Na exibição **[!UICONTROL Clientes Potenciais Envolvidos]** de um Fluxo de Tra
 
 * Quando você não tem nenhuma tarefa para desempenhar, a lista mostra uma mensagem de _Você está no auge hoje_.
 * Quando os filtros não correspondem a nenhuma tarefa, a lista relata que nenhuma tarefa corresponde aos seus filtros.
-* Quando nenhuma tarefa é selecionada, o painel de trabalho solicita que você selecione uma tarefa para visualizar seus detalhes.
+* Quando nenhuma tarefa é selecionada, o painel de trabalho solicita que você selecione uma tarefa. Para exibir seus detalhes, selecione uma tarefa.
 
 >[!MORELIKETHIS]
 >

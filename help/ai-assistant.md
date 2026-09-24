@@ -1,12 +1,12 @@
 ---
 title: Usar o bate-papo de IA
-description: Saiba como usar o AI Chat no Adobe Marketo Qualifier para pesquisar contas, elaborar projetos de alcance e obter respostas com base em seus dados de CRM, envolvimento e Centro de conhecimento.
+description: Saiba como usar o Bate-papo de IA no [!DNL Adobe Marketo Qualifier] para pesquisar contas, elaborar projetos de alcance e obter respostas com base nos seus dados de CRM, compromisso e Centro de Conhecimento.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/LHCHAk0rsNwLsKFhKMlHaLL7xkkCEAKFNDMEonb2TdQ'
 product_v2:
   - id: d98caee2-fd67-486e-9513-36435358ebff
-    internal-label: Sales Qualifier
+    internal-label: Adobe Marketo Qualifier
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -16,21 +16,21 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '712'
 ht-degree: 1%
 ---
 
 # Chat de IA
 
-O AI Chat responde a perguntas em linguagem natural com base no contexto de vendas. Use-a para pesquisar uma conta, preparar uma chamada, rascunhar um alcance geral e priorizar seu trabalho sem sair do Adobe Marketo Qualifier.
+O AI Chat responde a perguntas em linguagem natural com base no contexto de vendas. Use-a para pesquisar uma conta, preparar uma chamada, rascunhar plano de ação e priorizar seu trabalho sem sair do [!DNL Adobe Marketo Qualifier].
 
 ![Botão de bate-papo de IA](assets/ai-chat.png){width="800" zoomable="yes"}
 
 ## Abrir o bate-papo de IA
 
-Selecione o botão flutuante **[!UICONTROL Bate-papo de IA]** para abrir o painel de chat. O painel é aberto ao lado da página atual, para que você possa manter um cliente potencial, uma conta ou um Fluxo de trabalho de saída no modo de exibição. Arraste a borda do painel para redimensioná-lo. Para fechar o painel, selecione novamente **[!UICONTROL Chat de IA]**.
+Para abrir o painel de chat, selecione o botão flutuante **[!UICONTROL Bate-papo de IA]**. O painel é aberto ao lado da página atual, para que você possa manter um cliente potencial, uma conta ou um Fluxo de trabalho de saída no modo de exibição. Para redimensionar o painel, arraste sua borda. Para fechar o painel, selecione novamente **[!UICONTROL Chat de IA]**.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ O AI Chat pode usar estas fontes:
 
 * O manual da sua organização no [Centro de Conhecimento](admin-settings.md#knowledge-center).
 * Seu CRM conectado, incluindo clientes potenciais, contatos, contas, oportunidades e atividades.
-* [!DNL Marketo] dados de atividade e envolvimento.
+* [!DNL Marketo] Dados de atividade e envolvimento.
 * Pesquisa de contas e notícias recentes reunidas pela Account Qualification Agent.
 * Pesquisa pública na web.
 
@@ -58,9 +58,9 @@ Use o AI Chat para estes tipos de tarefas:
 
 ## Pergunte ao bate-papo de IA em todos os dados conectados
 
-O AI Chat pode responder a perguntas no Marketo Qualifier, CRM, [!DNL Marketo], [!DNL Adobe Journey Optimizer B2B Edition] e nos dados de inteligência da empresa. Faça uma pergunta em linguagem simples para pesquisar informações ou extrair contexto. O AI Chat lê e relata os seus dados; ele não cria, edita ou inicia nada.
+O AI Chat pode responder a perguntas no [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] e dados de inteligência da empresa. Faça uma pergunta em linguagem simples para pesquisar informações ou recuperar contexto. O AI Chat lê e relata os seus dados; ele não cria, edita ou inicia nada.
 
-Estes são alguns exemplos de prompts. Quanto mais específico você for no prompt, mais focados serão os resultados.
+Estes são alguns exemplos de prompts. Quanto mais específico você estiver no prompt, mais focados serão os resultados.
 
 Clientes potenciais e contas:
 
@@ -72,8 +72,8 @@ Clientes potenciais e contas:
 
 Centro de conhecimento:
 
-* &quot;Que garantias temos para lidar com objeções de preços?&quot;
-* &quot;Quais são nossos principais diferenciais em relação aos concorrentes?&quot;
+* &quot;Que material adicional está disponível para lidar com objeções de preços?&quot;
+* &quot;Quais são os principais diferenciais em relação aos concorrentes?&quot;
 * &quot;Listar documentos no Centro de conhecimento.&quot;
 * &quot;Resumir um documento.&quot;
 
@@ -93,7 +93,7 @@ CRM:
 [!DNL Adobe Journey Optimizer B2B Edition]:
 
 * &quot;Quantas jornadas eu tenho?&quot;
-* &quot;Como meu público-alvo é segmentado por persona?&quot;
+* &quot;Como a persona segmenta meu público?&quot;
 * &quot;Quais páginas de aterrissagem existem em minha conta?&quot;
 * &quot;Quais campos de clientes potenciais são alimentados para pontuação?&quot;
 
@@ -129,7 +129,7 @@ As respostas geradas por IA podem ser imprecisas. Analise todo o conteúdo antes
 * Leia os emails em rascunho cuidadosamente e personalize-os antes de enviar.
 * Use a saída do assistente como ponto de partida, não como uma entrega concluída.
 
-O uso do Bate-papo de IA pela sua organização é regido pelos termos da IA gerativa da Adobe.
+Os termos da IA gerativa da Adobe regulam o uso do bate-papo de IA pela sua organização.
 
 >[!MORELIKETHIS]
 >
