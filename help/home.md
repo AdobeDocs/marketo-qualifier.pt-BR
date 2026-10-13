@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/4IsAlgFBxddHCz0-CLCDXPCHI7m3motiXhgCR6MZq0k'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -17,7 +17,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 18%
@@ -39,7 +39,7 @@ O aplicativo faz parte da família de produtos [!DNL Marketo], juntamente com [!
 * **Faça perguntas no idioma natural** com o Bate-papo de IA, que usa os dados do CRM, do engajamento e da Central de Conhecimento.
 * **Acompanhe o desempenho de alcance** com relatórios de email e de agendamento de reunião.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476566?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3476550)
 
 ## Usar a home page
 
@@ -51,7 +51,7 @@ A página inicial também mostra tarefas futuras e fluxos de trabalho de saída.
 
 ::::landing-cards-container
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introdução
 
@@ -61,7 +61,7 @@ Conclua a configuração de administrador único para grupos de usuários e uma 
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Clientes potenciais
 
@@ -71,7 +71,7 @@ Crie, filtre e revise sua lista de clientes potenciais.
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Contas
 
@@ -81,7 +81,7 @@ Priorize o alcance de comunicação com dados de pipeline e envolvimento no nív
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Fluxos de trabalho de saída
 
@@ -91,7 +91,7 @@ Crie cadências orientadas por metas com emails personalizados gerados por IA.
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Tarefas
 
@@ -101,7 +101,7 @@ Processar chamadas telefônicas, LinkedIn InMail e tarefas de revisão de email 
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Desempenho
 
@@ -111,7 +111,7 @@ Revise o desempenho do email e da reserva de reunião.
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centro de conhecimento
 
@@ -121,7 +121,7 @@ Crie um manual que explique o alcance e a assistência da IA em seus materiais.
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Integrações
 
@@ -131,7 +131,7 @@ Conecte o Salesforce ou o Microsoft Dynamics 365 e mapeie os campos.
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Configurações do perfil
 
@@ -141,7 +141,7 @@ Configure a disponibilidade de email, assinatura e calendário.
 :::
 
 :::card
-![Ícone](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=pt-BR)
+![Ícone](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Chat de IA
 

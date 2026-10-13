@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2692'
 ht-degree: 0%
 ---
 
@@ -56,27 +56,27 @@ As seções a seguir explicam como criar um fluxo de trabalho de saída, revisar
 
 ## Criar um fluxo de trabalho de saída
 
-O assistente de Fluxo de Trabalho de Saída tem cinco etapas: **[!UICONTROL Meta]**, **[!UICONTROL Direcionamento]**, **[!UICONTROL Gerar pontos de contato]**, **[!UICONTROL Configurações]** e **[!UICONTROL Adicionar prospetos]**. Sua meta molda as etapas restantes.
+A experiência de configuração compacta organiza a configuração do fluxo de trabalho em torno da meta, do direcionamento, dos pontos de contato e das configurações. Use a navegação de seção para se mover entre elas. Depois de salvar o fluxo de trabalho, adicione prospetos para gerar seus emails.
 
 1. Na navegação à esquerda, selecione **[!UICONTROL Fluxos de trabalho de saída]**.
 1. Na guia **[!UICONTROL Procurar]**, selecione **[!UICONTROL + Criar Fluxo de Trabalho de Saída]** no canto superior direito.
 
 Os administradores podem atribuir o Fluxo de trabalho de saída a um colega de equipe, em vez de a eles mesmos. Antes de iniciar o fluxo de trabalho, selecione **[!UICONTROL Atribuir usuário]** na lista suspensa e escolha o colega de equipe.
 
-### Etapa 1: definir sua meta
+### Definir sua meta {#step-1-define-your-goal}
 
 A meta define o resultado pretendido e orienta o direcionamento, a cadência e a geração de email.
 
 1. Para gravar sua própria meta, selecione **[!UICONTROL Iniciar do zero]** ou, para usar um modelo salvo, selecione **[!UICONTROL Iniciar do modelo]**.
 
 1. Selecione uma das **[!UICONTROL Metas recomendadas]** correspondentes à sua empresa. Cada recomendação inclui uma breve explicação do por que ela se encaixa. Para preencher a meta, selecione uma recomendação. Para procurar o conjunto completo de recomendações, selecione **[!UICONTROL Exibir todas]** ou insira sua própria meta. Você também pode escolher na lista **[!UICONTROL Metas populares]**.
-1. Selecionar **[!UICONTROL Próximo: Direcionamento]**.
+1. Continue com o direcionamento.
 
 Declarar um resultado específico na meta. Por exemplo, digite `Book a 15-minute discovery call with marketing leaders evaluating campaign automation` em vez de `Promote campaign automation`.
 
 A IA preserva os requisitos na meta exatamente nos pontos de contato gerados. Inclua frases exatas, linhas de abertura ou fechamento necessárias, sessões e datas nomeadas ou uma estrutura específica quando o conteúdo gerado precisar preservá-las.
 
-### Etapa 2: configurar filtros de direcionamento
+### Configurar filtros de direcionamento {#step-2-configure-targeting-filters}
 
 Os filtros de direcionamento definem quais clientes potenciais são qualificados. Ao adicionar prospetos posteriormente, somente os prospetos que correspondem a esses filtros são exibidos na lista de seleção.
 
@@ -89,7 +89,7 @@ Descreva seu cliente potencial ideal em linguagem natural. Por exemplo, digite `
 1. Defina valores para o filtro.
 1. Adicione mais filtros se precisar restringir o público.
 
-1. Selecionar **[!UICONTROL Próximo: Gerar pontos de contato]**.
+1. Prossiga para os pontos de contato.
 
 O direcionamento pode usar o tipo de atividade, a pontuação, a classificação e outros atributos disponíveis. Combine os critérios com [!DNL AND] ou [!DNL OR] e use operadores como &quot;é igual a&quot;, &quot;contém&quot;, &quot;maior que&quot;, &quot;menor que&quot; e &quot;entre&quot;.
 
@@ -106,9 +106,11 @@ A inscrição automática segue esta sequência:
 
 Se outro representante já estiver contatando o cliente potencial, [!DNL Marketo Qualifier] exibe um aviso antes do início do alcance duplicado.
 
-### Etapa 3: gerar e revisar pontos de contato
+### Configurar pontos de contato {#step-3-generate-and-review-touchpoints}
 
 Após configurar o direcionamento, a IA analisa a meta e os critérios de direcionamento, define a cadência e grava um prompt para cada ponto de contato. A cadência pode incluir email, chamada telefônica e etapas do LinkedIn In InMail.
+
+Os pontos de contato usam um layout de sequência que facilita a verificação da ordem das etapas.
 
 ![Pontos de contato](assets/create-workflow-touchpoints.png){width="800" zoomable="yes"}
 
@@ -132,13 +134,13 @@ Defina um atraso do ponto de contato em dias, horas e minutos. Defina os dias, h
 
 Se sua organização criou um manual do [Centro de Conhecimento](admin-settings.md#knowledge-center), consulte-o no prompt. Nomeie o documento e descreva o contexto a ser usado. Por exemplo, digite `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`.
 
-Quando a cadência e os prompts estiverem prontos, selecione **[!UICONTROL Próximo: Configurações]**.
+Quando a cadência e os prompts estiverem prontos, continue com as configurações.
 
 Refine os prompts de ponto de contato antes de gerar emails de prospecto. A IA usa essas solicitações para cada cliente potencial selecionado.
 
-### Etapa 4: definir configurações de Fluxo de trabalho de saída
+### Definir configurações do fluxo de trabalho de saída {#step-4-configure-outbound-workflow-settings}
 
-A etapa **[!UICONTROL Configurações]** controla como o Fluxo de Trabalho de Saída é executado.
+A seção **[!UICONTROL Configurações]** controla como o Fluxo de Trabalho de Saída é executado.
 
 ![Painel de configurações](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
@@ -150,15 +152,15 @@ A etapa **[!UICONTROL Configurações]** controla como o Fluxo de Trabalho de Sa
 1. Para interromper pontos de contato de acompanhamento automaticamente depois que um cliente potencial marcar uma reunião, ative a **[!UICONTROL Pausa da Reserva de Reunião]**.
 1. Escolha se deseja usar o fuso horário de cada cliente potencial ou o **[!UICONTROL Fuso Horário]** do Fluxo de Trabalho de Saída para o tempo de envio. Se você usar o fuso horário do Fluxo de trabalho de saída, confirme se ele corresponde ao seu público-alvo.
 1. Em **[!UICONTROL Permissões]**, mantenha **[!UICONTROL Privado]** (o padrão) ou selecione **[!UICONTROL Compartilhado com todos]**. Para obter detalhes, consulte [Compartilhar um Fluxo de Trabalho de Saída](#share-an-outbound-workflow).
-1. Selecione **[!UICONTROL Salvar e adicionar clientes potenciais]**.
+1. Selecione **[!UICONTROL Salvar e adicionar clientes potenciais]** para abrir o modo de exibição de seleção de clientes potenciais.
 
 Para reverter a janela de envio, o fuso horário, os dias, as regras de acompanhamento e de ausência temporária, a visibilidade e a cadência de sugestões para seus padrões, ative **[!UICONTROL Redefinir para as configurações padrão]**. O nome do workflow de saída é deixado inalterado.
 
 Um administrador define o rodapé de recusa globalmente, que se aplica a emails de saída independentemente das configurações do Fluxo de trabalho de saída. Consulte [Configurar recusa de email global](integrations.md#configure-global-email-opt-out).
 
-### Etapa 5: adicionar prospetos e iniciar a geração de email
+### Adicionar prospetos e iniciar a geração de email {#step-5-add-prospects-and-start-email-generation}
 
-Salvar abre a visualização de seleção de cliente potencial com os filtros de direcionamento da etapa 2 aplicados.
+Depois de salvar, adicione prospetos da visualização de seleção. Os filtros de direcionamento configurados são aplicados.
 
 1. Revise a lista.
 
@@ -179,6 +181,15 @@ Os emails também podem ser gerados no idioma do cliente potencial, com saudaç�
 ## Revisar e refinar emails gerados
 
 Quando a geração termina, a exibição detalhada do Fluxo de trabalho de saída solicita que você revise os rascunhos. [!DNL Marketo Qualifier] não envia email até que você o aprove.
+
+Antes de um rascunho aparecer para revisão, o [!DNL Marketo Qualifier] o verifica em relação às diretrizes de qualidade. Se for curto, o rascunho será reescrito usando o feedback específico e verificado novamente. As mesmas diretrizes informam o primeiro rascunho, para que a maioria dos emails atenda a eles na primeira aprovação. As verificações asseguram que:
+
+* O corpo do email contém apenas a mensagem para o cliente potencial, sem notas internas, raciocínio ou referências de origem.
+* Uma solicitação de reunião é exibida somente quando o seu calendário está conectado em [Configurações de perfil](profile-settings.md), um link de reserva está disponível e o prompt do ponto de contato solicita uma solicitação de reunião.
+* As listas com marcadores estão formatadas corretamente.
+* O email evita padrões comuns de som de IA, incluindo traços eme, listas de três usados para ritmo, frases &quot;não apenas X, mas Y&quot; e cliques excessivamente usados.
+
+Você ainda revisa, edita e aprova cada email antes que ele seja enviado. O raciocínio, as edições diretas e a **[!UICONTROL Geração com IA]** funcionam como antes.
 
 1. Na exibição detalhada do Fluxo de Trabalho de Saída, selecione **[!UICONTROL Revisar rascunhos]** no banner.
 1. A etapa **[!UICONTROL Pontos de contato de revisão]** tem duas guias:
@@ -233,7 +244,7 @@ Cada Fluxo de Trabalho de Saída tem uma configuração **[!UICONTROL Permissõe
 >
 >O compartilhamento é permanente. Depois que um Fluxo de Trabalho de Saída é definido como **[!UICONTROL Compartilhado com todos]**, ele não pode ser alterado novamente para **[!UICONTROL Particular]**.
 
-Em um Fluxo de trabalho de saída compartilhado, os colegas de equipe podem inscrever seus próprios prospetos. Cada pessoa pode gerenciar ou pausar somente os clientes potenciais aos quais se inscreveu, inclusive ao usar ações em massa. Somente o proprietário do Fluxo de trabalho de saída pode editar configurações no nível do plano, incluindo programação, fuso horário e cadência. Essas configurações são somente leitura para colegas de equipe.
+Em um Fluxo de trabalho de saída compartilhado, os colegas de equipe podem inscrever seus próprios prospetos. Cada pessoa pode gerenciar ou pausar somente os clientes potenciais aos quais se inscreveu, inclusive ao usar ações em massa. Somente o proprietário do Fluxo de trabalho de saída pode editar configurações no nível do plano, como a janela de envio e o fuso horário. Essas configurações são somente leitura para colegas de equipe. Para alterar pontos de contato em um Fluxo de trabalho de saída em execução, duplique-o e edite a cópia.
 
 Ao inscrever prospetos em um Fluxo de trabalho de saída compartilhado, escolha se o email é enviado como o proprietário do fluxo de trabalho ou como cada representante atribuído do lead.
 
@@ -249,9 +260,23 @@ Quando um cliente potencial responde com uma mensagem de ausência temporária, 
 * **Retomada automática**: ativada por padrão. Se a resposta de ausência temporária incluir uma data de retorno, o Fluxo de trabalho de saída retomará a cadência nessa data. Se nenhuma data de retorno for fornecida, o Fluxo de trabalho de saída será retomado depois de um buffer que sua equipe pode configurar.
 * **Opções manuais**: um representante ainda pode selecionar **[!UICONTROL Retomar agora]** ou agendar uma data específica de retomada. Consulte [Gerenciar fluxos de trabalho de saída existentes](#manage-existing-outbound-workflows).
 
+### Solicitações de recusa em respostas
+
+Quando um cliente potencial responde com uma solicitação clara para parar de receber emails, como &quot;pare de enviar emails para mim&quot;, &quot;cancelar inscrição&quot;, &quot;remover-me da lista&quot; ou &quot;me tirar da lista&quot;, o [!DNL Marketo Qualifier] marca automaticamente o cliente potencial como recusa. Este é o mesmo status e selo **[!UICONTROL Recusado]** que selecionar o link para opção de não participação, e nenhum outro ponto de contato será enviado. Qualquer atualização de status do CRM configurada funciona da mesma maneira que em um link para opção de não participação.
+
+Somente limpar a contagem de solicitações. Por exemplo, &quot;Não sou a pessoa certa&quot; ou &quot;não no momento&quot; é tratado como qualquer outra resposta, não como um opt-out. Nenhuma configuração é necessária; os recusas de resposta funcionam juntamente com o link de recusa configurado em [Configurações de administração](admin-settings.md#configure-global-email-opt-out).
+
+## Duplicar um fluxo de trabalho de saída
+
+É possível duplicar um Fluxo de trabalho de saída criado ou compartilhado com você. Duplique-o da lista de Fluxos de Trabalho de Saída da guia **[!UICONTROL Procurar]** ou da exibição detalhada do fluxo de trabalho.
+
+A cópia inclui a meta original, o direcionamento, os pontos de contato e as configurações, mas não seus prospetos. A cópia começa como um **[!UICONTROL Rascunho]** com **[!UICONTROL Permissões privadas]**, para que você possa revisá-lo e editá-lo antes de adicionar prospetos ou compartilhá-lo. O workflow original e seus clientes potenciais não são afetados.
+
+Para alterar os pontos de contato de um Fluxo de trabalho de saída em execução, duplique-o e edite a cópia. Adicione prospetos à cópia; os prospetos já inscritos no original continuam em sua cadência sem interrupção. Cada fluxo de trabalho tem seus próprios resultados em [Desempenho de saída](performance.md).
+
 ## Gerenciar fluxos de trabalho de saída existentes
 
-Na página **[!UICONTROL Fluxos de Trabalho de Saída]**, a guia **[!UICONTROL Procurar]** lista todos os Fluxos de Trabalho de Saída disponíveis para você. Cada cartão mostra a meta, os pontos de contato configurados e as métricas de desempenho. Use esta exibição para monitorar fluxos de trabalho de saída, revisar rascunhos ou adicionar prospetos.
+Na página **[!UICONTROL Fluxos de Trabalho de Saída]**, a guia **[!UICONTROL Procurar]** lista todos os Fluxos de Trabalho de Saída disponíveis para você. Cada cartão mostra a meta, os pontos de contato configurados e as métricas de desempenho. Use esta exibição para monitorar Fluxos de Trabalho de Saída, revisar rascunhos, adicionar prospetos ou duplicar um fluxo de trabalho.
 
 ## Caixa de saída de email
 
@@ -259,10 +284,10 @@ A [Caixa de Saída de Email](email-outbox.md) lista os emails automatizados envi
 
 ## Reserva de reunião
 
-Quando você conecta seu calendário, o Qualificador Marketo gera um vínculo de reserva pessoal que os prospetos podem usar para programar horas com você.
+Ao conectar o calendário, o Marketo Qualifier gera um link de reserva pessoal que os clientes potenciais podem usar para agendar horas com você.
 
 * **Links de reserva**—Configure a conexão e a disponibilidade do calendário nas [Configurações de perfil](profile-settings.md). Adicione o link de reserva à sua assinatura de email para que ele apareça em emails de saída.
-* **Posicionamento de cadência** — O Marketo Qualifier insere seu link de reserva em pontos relevantes em uma cadência. Você pode alterar sua disposição.
+* **Posicionamento de cadência** — o Marketo Qualifier insere seu link de reserva em pontos relevantes em uma cadência. Você pode alterar sua disposição.
 * **Pausa de Reserva** — Quando um cliente potencial registra uma reunião, a **[!UICONTROL Pausa de Reserva de Reunião]** interrompe as acompanhamentos adicionais. Consulte [Etapa 4: definir configurações de Fluxo de Trabalho de Saída](#step-4-configure-outbound-workflow-settings).
 
 Acompanhe os resultados da reserva na página [Desempenho de saída](performance.md).

@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/zf2H5rq1JlIT26LqLPMrm2Mq3tSIrLOiTEw6BXb1w2U'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -15,9 +15,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2124387555f5fb08ea19eaf121fc87aa66d66de2
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '852'
 ht-degree: 1%
 ---
 
@@ -48,7 +48,7 @@ A lista de clientes potenciais combina pessoas de mais de uma fonte:
 
 * **Clientes potenciais do CRM**—[!DNL Adobe Marketo Qualifier] importa automaticamente clientes potenciais e contatos atribuídos ao usuário conectado. Consulte [Integrações](integrations.md).
 * **Prospetos importados** — Prospetos importados de um arquivo CSV.
-* **Prospetos adicionados manualmente** — Prospetos individuais adicionados ao Qualificador do Marketo.
+* **Prospetos adicionados manualmente** — Prospetos individuais adicionados ao Marketo Qualifier.
 
 Para adicionar prospetos que não vêm do seu CRM:
 
@@ -106,8 +106,12 @@ Para abrir o perfil de um cliente potencial, selecione-o. Revise os sinais impor
 
 Além do resumo da pessoa de IA permanente, você pode gerar uma reunião preparada sob medida para uma chamada futura específica a partir da guia **[!UICONTROL Pesquisa de reunião]**, ao lado de **[!UICONTROL Pesquisa de conta]**.
 
+O Meeting Prep combina pesquisas na Web sobre o cliente potencial e sua empresa com evidências de estudos de caso sobre clientes de mesmo nível que usam o produto que você está vendendo. Os pontos de discussão do estudo de caso podem incluir resultados mensuráveis do cliente. As fontes são combinadas em um resumo, com os pontos de discussão classificados por relevância. Cada ponto de discussão identifica se vem de estudos de caso, pesquisa na web ou ambos. Se nenhuma evidência de estudo de caso relevante estiver disponível, o preparo da reunião usa pesquisa na Web.
+
 * **Baseado em meta** — Se o cliente potencial estiver inscrito em um Fluxo de Trabalho de Saída em execução, selecione-o. O preparo se alinha à meta do Fluxo de trabalho de saída, como reservar uma reunião ou reengajar o cliente potencial.
 * **Personalizar prompt**—Digite o que você deseja preparar, por exemplo `Focus on renewal risk` ou `Prepare for a technical deep dive with their IT lead`. O preparo corresponde ao seu prompt. A opção de prompt personalizado está disponível sempre que o cliente potencial não está em um Fluxo de trabalho de saída em execução.
+
+O resumo continua seguindo a meta do Fluxo de trabalho de saída ou o prompt personalizado que você escolher. A forma como você gera o preparo da reunião não é alterada.
 
 >[!MORELIKETHIS]
 >

@@ -1,11 +1,11 @@
 ---
 title: Configurar destaques de marketing
-description: Saiba como conectar o Marketo ao Adobe Marketo Qualifier para que os representantes possam visualizar e filtrar clientes potenciais por atividade em tempo real do Marketo em destaques de marketing.
+description: Saiba como conectar o Marketo ao Adobe Marketo Qualifier para que os representantes possam visualizar e filtrar prospetos por atividade em tempo real do Marketo em Destaques de marketing.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -18,7 +18,7 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Destaques de marketing mostra a atividade [!DNL Marketo] ativa de cada cliente p
 A instalação tem quatro partes:
 
 * Parte A: Criar credenciais de API na Adobe Developer Console.
-* Parte B: Colete o endpoint e os identificadores do Adobe Marketo Qualifier.
+* Parte B: Obtenha seus identificadores e endpoint do Adobe Marketo Qualifier.
 * Parte C: Configurar um webhook no [!DNL Marketo Engage].
 * Parte D: adicionar o webhook a um acionador de Campanha inteligente.
 
@@ -43,7 +43,7 @@ Após a conclusão da instalação, os usuários verão e filtrarão esta ativid
 
 ## Parte A: Criar credenciais de API {#part-a-create-api-credentials}
 
-Essas credenciais permitem que [!DNL Marketo] se autentique com segurança no Qualificador Marketo.
+Essas credenciais permitem que o [!DNL Marketo] se autentique com segurança no Marketo Qualifier.
 
 Para criar as credenciais:
 
@@ -53,7 +53,7 @@ Para criar as credenciais:
 1. Selecione **[!UICONTROL Adicionar API]**, selecione **[!UICONTROL API Experience Platform]** e **[!UICONTROL Avançar]**.
 1. Escolha **[!UICONTROL OAuth Server-to-Server]** como o tipo de autenticação e selecione **[!UICONTROL Avançar]**.
 
-   O **[!UICONTROL OAuth Server-to-Server]** permite que o [!DNL Marketo] chame a API do Qualificador do Marketo diretamente do servidor, sem exigir que uma pessoa entre.
+   O **[!UICONTROL OAuth Server-to-Server]** permite que o [!DNL Marketo] chame a API do Marketo Qualifier diretamente do servidor, sem exigir que uma pessoa entre.
 
 1. Insira um nome de credencial com 45 caracteres ou menos, como `Marketo Qualifier Marketing Highlights Creds`.
 1. Para associar o perfil de produto, selecione-o e, em seguida, selecione **[!UICONTROL Salvar API configurada]**.
@@ -179,7 +179,7 @@ Para adicionar o webhook:
 1. Na guia **[!UICONTROL Fluxo]**, adicione a etapa **[!UICONTROL Chamar Webhook]** e selecione o webhook criado na [Parte C](#part-c-configure-the-marketo-webhook).
 1. Ative a Campanha inteligente.
 
-A atividade dessa Campanha inteligente agora flui para o Qualificador do Marketo. Os representantes veem e filtram esta atividade em **[!UICONTROL Clientes potenciais]** > **[!UICONTROL Destaques de marketing]**.
+A atividade dessa Campanha inteligente agora flui para o Marketo Qualifier. Os representantes veem e filtram esta atividade em **[!UICONTROL Clientes potenciais]** > **[!UICONTROL Destaques de marketing]**.
 
 >[!MORELIKETHIS]
 >
