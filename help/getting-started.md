@@ -37,7 +37,7 @@ Depois que a Adobe provisionar o Marketo Qualifier para sua organização, um ad
 
 Os grupos de usuários no Adobe Admin Console são usados para controlar o acesso ao Marketo Qualifier. Ambos os grupos devem ser criados antes que os usuários possam entrar.
 
-Consulte a [documentação do Adobe Admin Console](https://helpx.adobe.com/business/enterprise/users/users-and-groups/user-groups.html) para obter informações sobre a configuração de grupos.
+Consulte a [documentação do Adobe Admin Console](https://helpx.adobe.com/br/business/enterprise/users/users-and-groups/user-groups.html) para obter informações sobre a configuração de grupos.
 
 >[!PREREQUISITES]
 >
