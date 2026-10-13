@@ -39,7 +39,7 @@ O aplicativo faz parte da família de produtos [!DNL Marketo], juntamente com [!
 * **Faça perguntas no idioma natural** com o Bate-papo de IA, que usa os dados do CRM, do engajamento e da Central de Conhecimento.
 * **Acompanhe o desempenho de alcance** com relatórios de email e de agendamento de reunião.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476550)
+>[!VIDEO](https://video.tv.adobe.com/v/3476566?captions=por_br)
 
 ## Usar a home page
 
