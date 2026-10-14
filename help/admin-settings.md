@@ -3,20 +3,26 @@ title: Configurações de administração
 description: Saiba como gerenciar campos do CRM, sincronização de atividades, recusa de email e outras configurações de administração do [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
-TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-    internal-label: Integrations
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
-    internal-label: Administration
-
 internal-label: Administration
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+autotag-review: '2026-10-08T17:58:28.029Z'
+TQID: 'https://experienceleague.adobe.com/2eccZWj1XY7qP20n6GcnBe6PZwNkp0ALhZfOhljwZF8'
+product_v2:
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1292'
 ht-degree: 0%
 ---
 
@@ -55,7 +61,7 @@ Cada lead pode incluir uma pré-visualização de email [!DNL Marketo], um link 
 
 ## Escopo de acesso do CRM
 
-O Marketo Qualifier lê usuários, contatos, mapeamentos de proprietários, leads, contas, oportunidades e atividades do CRM. Ele grava no CRM somente atividades de alcance reportadas e status de recusa, e sincroniza atividades de alcance reportadas ao Marketo. Seu administrador de CRM prepara o acesso à API no Salesforce ou Dynamics. Um administrador do Marketo Qualifier conecta o CRM, mapeia os campos de entrada e escolhe se deseja sincronizar as atividades.
+O Marketo Qualifier lê usuários, contatos, mapeamentos de proprietários, clientes potenciais, contas, oportunidades e atividades do CRM. Ele grava no CRM somente atividades de alcance reportadas e status de recusa, e sincroniza atividades de alcance reportadas ao Marketo. Seu administrador de CRM prepara o acesso à API no Salesforce ou Dynamics. Em seguida, um administrador do Marketo Qualifier conecta o CRM, mapeia campos de entrada e escolhe se deseja sincronizar atividades.
 
 >[!NOTE]
 >
@@ -75,7 +81,7 @@ Depois que o CRM estiver conectado, selecione **[!UICONTROL Gerenciar]** para a 
 1. Ative **[!UICONTROL Filtrável]** para cada campo de cliente potencial, contato ou oportunidade que você deseja disponibilizar como filtro na lista **[!UICONTROL Clientes Potenciais]**.
 1. Visualize a seção e selecione **[!UICONTROL Adicionar]**.
 
-Os campos mapeados aparecem nas áreas correspondentes do Qualificador do Marketo:
+Os campos mapeados aparecem nas áreas correspondentes do Marketo Qualifier:
 
 * Os campos de cliente potencial aparecem na guia **[!UICONTROL Pessoa]**.
 * Os campos de conta aparecem na guia **[!UICONTROL Conta]**.
@@ -85,13 +91,13 @@ Os campos mapeados aparecem nas áreas correspondentes do Qualificador do Market
 
 1. Em **[!UICONTROL Conexões do CRM]**, selecione **[!UICONTROL Gerenciar]** para o CRM conectado.
 1. Abra **[!UICONTROL Mapeamento de saída]**.
-1. Ative a **[!UICONTROL Sincronização de atividade]** para sincronizar as atividades de alcance do Qualificador do Marketo de volta ao CRM e ao Marketo.
+1. Ative a **[!UICONTROL Sincronização de atividade]** para sincronizar as atividades de alcance da Marketo Qualifier com o CRM e a Marketo.
 
-Quando a sincronização de atividades está desativada, o Qualificador da Marketo continua a usar dados de entrada do CRM, mas não sincroniza atividades de alcance geral com seu CRM ou Marketo.
+Quando a sincronização de atividades está desativada, o Marketo Qualifier continua a usar dados de entrada do CRM, mas não sincroniza atividades de alcance para seu CRM ou Marketo.
 
 ## Configurar Regras de Sincronização do CRM
 
-O Marketo Qualifier pode gravar atualizações de status de clientes potenciais de volta automaticamente no Salesforce e no Microsoft Dynamics à medida que um cliente potencial passa por um fluxo de trabalho de saída, para que os representantes não atualizem mais o CRM manualmente.
+O Marketo Qualifier pode enviar atualizações de status de clientes potenciais de volta para o Salesforce e o Microsoft Dynamics automaticamente à medida que um cliente potencial passa por um fluxo de trabalho de saída, para que os representantes não atualizem mais o CRM manualmente.
 
 ### O que as Regras de Sincronização do CRM fazem
 
@@ -138,7 +144,7 @@ Cada documento carregado também exibe seu status de processamento, como **[!UIC
 
 Quando o manual estiver pronto, os representantes poderão usá-lo em dois lugares:
 
-* **Prompts de email de saída** — Em um prompt de ponto de contato, nomeie o documento e descreva o contexto a ser usado. Por exemplo, digite `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Consulte [Gerar e analisar pontos de contato](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Prompts de email de saída** — Em um prompt de ponto de contato, nomeie o documento e descreva o contexto a ser usado. Por exemplo, digite `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Consulte [Configurar pontos de contato](outbound-workflows.md#step-3-generate-and-review-touchpoints).
 * **Chat de IA**: consulte o Centro de Conhecimento em sua pergunta. Por exemplo, digite `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Consulte [Chat de IA](ai-assistant.md).
 
 Em ambos os casos, o conteúdo gerado reflete a mensagem no seu manual em vez da pesquisa genérica.
@@ -152,7 +158,7 @@ Em ambos os casos, o conteúdo gerado reflete a mensagem no seu manual em vez da
 
 As configurações são salvas automaticamente.
 
-Quando um cliente potencial seleciona o link, o Marketo Qualifier interrompe o envio de emails para esse cliente potencial e sincroniza o status de recusa para o CRM conectado.
+Quando um cliente potencial seleciona o link, o Marketo Qualifier interrompe o envio de emails para esse cliente potencial e sincroniza o status de recusa para o CRM conectado. A Marketo Qualifier também reconhece solicitações claras de recusa na resposta por email de um cliente potencial, como &quot;pare de me enviar por email&quot; ou &quot;cancelar inscrição&quot;, e marca o cliente potencial como recusa automática. O mesmo status e selo **[!UICONTROL Opted out]** se aplicam e nenhum outro ponto de contato é enviado. Nenhuma configuração adicional é necessária. Respostas que não pedem claramente para parar, como &quot;não no momento&quot;, não são tratadas como recusas. Consulte [Solicitações de recusa em respostas](outbound-workflows.md#opt-out-requests-in-replies).
 
 ## Referência: amostra de parâmetros da API
 
