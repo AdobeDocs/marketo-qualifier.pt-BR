@@ -3,12 +3,18 @@ title: Notas de versão do [!DNL Adobe Marketo Qualifier]
 description: Saiba mais sobre as novidades do [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 12%
+source-wordcount: '619'
+ht-degree: 11%
 ---
 # Notas de versão do [!DNL Adobe Marketo Qualifier]
+
+## Próxima versão
+
+* Encontre e priorize as contas e os leads certos com público-alvo inteligente (Beta). Descreva as contas desejadas em linguagem simples, adicione dados de CRM e sinais de crescimento, analise clientes potenciais pontuados e adicione-os a um Fluxo de trabalho de saída. [Saiba mais](smart-audience.md).
+* Filtre contatos por campos de conta, junto com campos de contato e oportunidade, para encontrar os contatos certos e direcionar workflows de saída com mais precisão. [Saiba mais](prospects.md#filter-and-find-prospects).
+* Os contatos mostram sua conta associada e o nome do proprietário, e a página de um cliente potencial agora mostra 90 dias de atividade de marketing, antes 30. [Saiba mais](prospects.md#review-prospect-details).
 
 ## 10-08-2026
 

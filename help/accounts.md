@@ -13,15 +13,17 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: 30abc8c57bb9b7a57f68c8e7daecc1bf3ac36567
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '703'
 ht-degree: 0%
 ---
 
 # Contas
 
 A visualização da conta combina pesquisa gerada por IA, notícias recentes, oportunidades abertas, valor do pipeline e contatos envolvidos. Use essas informações para entender e priorizar uma conta antes de entrar em contato.
+
+Para localizar e priorizar várias contas de uma só vez, use o [Smart audience (Beta)](smart-audience.md). Crie uma lista de contas, refine-a com dados de CRM e sinais de crescimento e encontre leads para adicionar a um fluxo de trabalho de saída.
 
 ## Abrir uma conta
 
@@ -66,7 +68,9 @@ Use os botões abaixo da visão geral para alternar entre visualizações de con
 | **[!UICONTROL Membros Principais]** | Os contatos mais envolvidos da conta, classificados por envolvimento. Cada contato mostra o título do cargo, o endereço de email, a pontuação de engajamento e o indicador de urgência. |
 | **[!UICONTROL Dados de intenção]** | Sinais de intenção de compra para a conta, como os produtos e tópicos que a conta está pesquisando. |
 | **[!UICONTROL Membros da equipe de conta]** | Pessoas atribuídas à conta, com seu email, cargo, território e grupo de produtos. |
-| **[!UICONTROL Campos do CRM]** | Campos de conta importados do seu CRM, conforme configurado no mapeamento de entrada. Consulte [Integrações](integrations.md#map-crm-fields-inbound-mapping). |
+| **[!UICONTROL Campos do CRM]** | Campos de conta importados do seu CRM, conforme configurado no mapeamento de entrada. |
+
+Os campos que um administrador torna filtráveis também podem ser usados para filtrar contatos por sua conta associada e definir critérios de direcionamento de Fluxo de trabalho de saída. Consulte [Integrações](integrations.md#map-crm-fields-inbound-mapping).
 
 Na exibição **[!UICONTROL Membros Principais]**, execute uma destas ações para um contato:
 

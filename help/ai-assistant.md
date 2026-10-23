@@ -16,9 +16,9 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '754'
 ht-degree: 1%
 ---
 
@@ -58,7 +58,7 @@ Use o AI Chat para estes tipos de tarefas:
 
 ## Pergunte ao bate-papo de IA em todos os dados conectados
 
-O AI Chat pode responder a perguntas no [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] e dados de inteligência da empresa. Faça uma pergunta em linguagem simples para pesquisar informações ou recuperar contexto. O AI Chat lê e relata os seus dados; ele não cria, edita ou inicia nada.
+O AI Chat pode responder a perguntas no [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] e dados de inteligência da empresa. Faça uma pergunta em linguagem simples para pesquisar informações ou recuperar contexto. Essas pesquisas de dados conectados leem e relatam seus dados; elas não criam, editam ou iniciam programas ou campanhas.
 
 Estes são alguns exemplos de prompts. Quanto mais específico você estiver no prompt, mais focados serão os resultados.
 
@@ -106,7 +106,8 @@ Inteligência da empresa:
 
 ### Escopo e limites atuais
 
-* O AI Chat lê e relata os seus dados. Ela não cria, edita ou inicia nada. Por exemplo, ele não cria um programa, não inicia uma campanha nem edita uma lista.
+* Pesquisas de dados conectados leem e relatam seus dados. Eles não criam um programa, não iniciam uma campanha nem editam um registro do CRM.
+* No [Público-alvo inteligente (Beta)](smart-audience.md), o chat dá suporte a ações na lista de públicos-alvo, incluindo salvar uma lista, adicionar colunas de informações, filtrar e priorizar contas e clientes potenciais e adicionar clientes potenciais selecionados a um Fluxo de Trabalho de Saída existente. Isso não grava no CRM nem substitui a revisão e a aprovação de email.
 * O AI Chat pesquisa informações; não é uma ferramenta de relatório. Ele não cria análises ou tendências ao longo do tempo no estilo [!DNL Marketo], como a integridade do email para o trimestre ou uma lista de clientes potenciais criados nos últimos 10 dias. Use relatórios nativos [!DNL Marketo] para essas tarefas.
 
 ## Respostas terrestres no seu manual
