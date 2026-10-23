@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2776'
 ht-degree: 0%
 ---
 
@@ -93,6 +93,8 @@ Descreva seu cliente potencial ideal em linguagem natural. Por exemplo, digite `
 
 O direcionamento pode usar o tipo de atividade, a pontuação, a classificação e outros atributos disponíveis. Combine os critérios com [!DNL AND] ou [!DNL OR] e use operadores como &quot;é igual a&quot;, &quot;contém&quot;, &quot;maior que&quot;, &quot;menor que&quot; e &quot;entre&quot;.
 
+Para o Salesforce e o Microsoft Dynamics 365, o direcionamento também pode combinar campos de conta, contato e oportunidade que um administrador torna filtráveis no [mapeamento de entrada](integrations.md#map-crm-fields-inbound-mapping). Por exemplo, combine a função de um contato com o setor de sua conta associada e o estágio de uma oportunidade para direcionar os contatos certos.
+
 ### Inscrever clientes potenciais dos Destaques de marketing automaticamente
 
 Um fluxo de trabalho de saída pode avaliar a atividade de Destaques de marketing ao vivo em relação aos critérios de direcionamento. Quando a atividade corresponde, [!DNL Marketo Qualifier] resolve o proprietário do CRM do cliente potencial por email e inscreve o cliente potencial somente em um fluxo de trabalho qualificado que pertença a esse representante.
@@ -161,6 +163,8 @@ Um administrador define o rodapé de recusa globalmente, que se aplica a emails 
 ### Adicionar prospetos e iniciar a geração de email {#step-5-add-prospects-and-start-email-generation}
 
 Depois de salvar, adicione prospetos da visualização de seleção. Os filtros de direcionamento configurados são aplicados.
+
+Você também pode adicionar leads a um Fluxo de Trabalho de Saída existente de uma [lista de Públicos-alvo inteligentes (Beta)](smart-audience.md#add-leads-to-an-outbound-workflow). Revise os clientes potenciais e o fluxo de trabalho selecionados antes de confirmar. A adição de clientes em potencial não substitui as etapas de análise e aprovação de email descritas abaixo.
 
 1. Revise a lista.
 

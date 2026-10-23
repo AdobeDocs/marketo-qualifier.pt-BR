@@ -15,9 +15,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '953'
 ht-degree: 1%
 ---
 
@@ -28,7 +28,7 @@ Para exibir os clientes em potencial e os contatos que você pode acessar, selec
 ![Tabela de clientes potenciais exibindo o status do cliente potencial e a última atividade para gerenciamento de clientes potenciais](./assets/prospects.png){width="800" zoomable="yes"}
 
 * **[!UICONTROL Clientes potenciais]** clientes potenciais atribuídos a você no CRM conectado.
-* **[!UICONTROL Contatos]** Contatos atribuídos a você no CRM conectado.
+* **[!UICONTROL Contatos]** Contatos atribuídos a você no CRM conectado, com sua conta associada. Os detalhes de contato também incluem o nome do proprietário. Esses detalhes estão disponíveis para o Salesforce e o Microsoft Dynamics 365.
 * **[!UICONTROL Destaques de marketing]** clientes potenciais com atividade de Marketo ao vivo, como aberturas ou cliques de email.
 * **[!UICONTROL Lista de pessoas]** Clientes potenciais que você importa ou adiciona manualmente.
 
@@ -80,6 +80,8 @@ Os administradores também podem disponibilizar campos do CRM mapeados como filt
 
 Em **[!UICONTROL Meus Contatos da Oportunidade]**, você também pode filtrar contatos por campos de suas oportunidades associadas, como estágio, tipo e data de fechamento. Os campos de oportunidade têm rótulos como **[!UICONTROL Estágio (Oportunidade)]**, que os distingue dos campos de contato. O administrador controla quais campos de oportunidade estão disponíveis como filtros.
 
+Também é possível filtrar contatos por campos da conta associada, como setor, região ou tipo de conta. O administrador escolhe quais campos de conta podem ser filtrados. Combine filtros de conta, contato e oportunidade para localizar, por exemplo, contatos com uma função específica em contas de um setor específico. A filtragem de campo de conta está disponível para Salesforce e Microsoft Dynamics 365, e os mesmos campos podem ser usados em [Direcionamento de Fluxo de Trabalho de Saída](outbound-workflows.md#step-2-configure-targeting-filters).
+
 ### Filtrar por destaques de marketing
 
 Revise e priorize clientes potenciais pelo envolvimento ativo de [!DNL Marketo], como atividade de email, visitas da Web e preenchimentos de formulário. O engajamento aparece em tempo quase real, à medida que acontece.
@@ -98,8 +100,8 @@ Os destaques de marketing estão disponíveis em todas as regiões de produção
 Para abrir o perfil de um cliente potencial, selecione-o. Revise os sinais importantes antes de entrar em contato com:
 
 * **Resumo da pessoa de IA** — um instantâneo escrito por IA do cliente potencial ou contato e seu envolvimento recente. Use o resumo para entender a pessoa rapidamente antes de revisar atividades individuais. Os resumos da pessoa de IA estão disponíveis em instâncias que executam o [!DNL Marketo Optimizer] Prime ou o Ultimate.
-* **Lista de atividades** — Uma lista cronológica de atividades e comportamentos recentes.
-* **Modo de exibição de Linha do Tempo** — uma linha do tempo visual do envolvimento entre canais.
+* **Lista de atividades** — Uma lista cronológica que mostra os últimos 90 dias de atividade de marketing.
+* **Modo de exibição de Linha do Tempo** — uma linha do tempo visual que mostra os últimos 90 dias de envolvimento de marketing entre canais.
 * **Conteúdo exibido** — páginas da Web e ativos que o cliente potencial visualizou. Para abrir um item, selecione-o
 
 ### Gerar preparação da reunião

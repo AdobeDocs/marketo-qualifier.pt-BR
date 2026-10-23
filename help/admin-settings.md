@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Administration
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1356'
 ht-degree: 0%
 ---
 
@@ -78,14 +78,16 @@ Depois que o CRM estiver conectado, selecione **[!UICONTROL Gerenciar]** para a 
 
    Cada linha de campo exibe seu **[!UICONTROL Nome de exibição]**, **[!UICONTROL Nome do campo]** e **[!UICONTROL Tipo de dados]**.
 
-1. Ative **[!UICONTROL Filtrável]** para cada campo de cliente potencial, contato ou oportunidade que você deseja disponibilizar como filtro na lista **[!UICONTROL Clientes Potenciais]**.
+1. Ative o **[!UICONTROL Filtrável]** para cada campo de cliente potencial, contato, conta ou oportunidade que você deseja disponibilizar como filtro na lista **[!UICONTROL Clientes Potenciais]** e no [Direcionamento de Fluxo de Trabalho de Saída](outbound-workflows.md#step-2-configure-targeting-filters).
 1. Visualize a seção e selecione **[!UICONTROL Adicionar]**.
 
 Os campos mapeados aparecem nas áreas correspondentes do Marketo Qualifier:
 
 * Os campos de cliente potencial aparecem na guia **[!UICONTROL Pessoa]**.
-* Os campos de conta aparecem na guia **[!UICONTROL Conta]**.
+* Os campos de conta aparecem na guia **[!UICONTROL Conta]**. Em uma seção com o tipo de entidade **[!UICONTROL Contas]**, torne os campos filtráveis para que os representantes possam filtrar contatos por atributos de sua conta associada, como setor, região ou tipo de conta.
 * Os campos de oportunidade aparecem na seção **[!UICONTROL Oportunidade de conta]**. Os campos de oportunidade filtráveis também aparecem como suas próprias colunas em **[!UICONTROL Meus Contatos de Oportunidade]**, com rótulos como **[!UICONTROL Preparo (Oportunidade)]** para diferenciá-los dos campos de contato.
+
+A filtragem de campo de conta está disponível para Salesforce e Microsoft Dynamics 365. Os representantes podem combinar campos de conta, contato e oportunidade filtráveis para localizar contatos e definir critérios de direcionamento de Fluxo de trabalho de saída.
 
 ## Configurar a sincronização de atividades (mapeamento de saída)
 
