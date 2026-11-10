@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1063'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,7 @@ Depois que a Adobe provisionar o Marketo Qualifier para sua organização, um ad
 
 Os grupos de usuários no Adobe Admin Console são usados para controlar o acesso ao Marketo Qualifier. Ambos os grupos devem ser criados antes que os usuários possam entrar.
 
-Consulte a [documentação do Adobe Admin Console](https://helpx.adobe.com/br/business/enterprise/users/users-and-groups/user-groups.html) para obter informações sobre a configuração de grupos.
+Consulte a [documentação do Adobe Admin Console](https://helpx.adobe.com/business/enterprise/users/users-and-groups/user-groups.html) para obter informações sobre a configuração de grupos.
 
 >[!PREREQUISITES]
 >
@@ -179,6 +179,8 @@ Depois de conectar o CRM, configure o mapeamento de entrada para determinar quai
 Consulte [Mapear campos do CRM (mapeamento de entrada)](integrations.md#map-crm-fields-inbound-mapping) para obter as etapas completas, incluindo como disponibilizar campos importados como filtros.
 
 ## Próximas etapas
+
+Como opção, os administradores podem [instalar o plug-in do CRM](crm-plugin-setup.md) para que os representantes possam usar os insights do Marketo Qualifier no Salesforce ou no Microsoft Dynamics 365. No Salesforce, os administradores também podem adicionar ações para fluxos de trabalho de saída e campanhas do Marketo a exibições de listas de clientes potenciais e de contatos e páginas de registro.
 
 >[!MORELIKETHIS]
 >

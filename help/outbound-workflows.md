@@ -21,9 +21,9 @@ topic_v2:
     internal-label: Artificial intelligence
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '3086'
 ht-degree: 0%
 ---
 
@@ -82,20 +82,21 @@ A IA preserva os requisitos na meta exatamente nos pontos de contato gerados. In
 
 Os filtros de direcionamento definem quais clientes potenciais são qualificados. Ao adicionar prospetos posteriormente, somente os prospetos que correspondem a esses filtros são exibidos na lista de seleção.
 
-![Filtros de direcionamento](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
+Descreva os clientes em potencial ou contatos do CRM que deseja acessar em linguagem simples. Por exemplo, digite `Contacts with open opportunities closing in the next 30 days` ou use um prompt de exemplo interno para começar. [!DNL Adobe Marketo Qualifier] converte a descrição em filtros que você pode revisar e editar antes de salvar. Se parte da descrição não puder ser convertida em um filtro, ela será sinalizada para que você possa revisar a condição, em vez de deixá-la de fora sem saber.
 
-Descreva seu cliente potencial ideal em linguagem natural. Por exemplo, digite `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] converte a descrição em critérios de direcionamento que você pode revisar e refinar.
+O construtor de filtros usa a mesma experiência que os [filtros de Destaques de Marketing](prospects.md#filter-by-marketing-highlights) na página de clientes potenciais. Use-a para adicionar, editar ou limpar condições.
 
-1. Para abrir a lista **[!UICONTROL Adicionar um filtro]**, selecione a seta para baixo e um filtro.
-
-1. Defina valores para o filtro.
-1. Adicione mais filtros se precisar restringir o público.
-
-1. Prossiga para os pontos de contato.
+1. Revise os filtros gerados a partir da sua descrição ou selecione um filtro para adicionar uma condição manualmente.
+1. Escolha o operador e insira ou selecione os valores para cada condição.
+1. Adicione, edite ou limpe condições para refinar o público-alvo.
+1. Selecione **[!UICONTROL Visualizar clientes em potencial]** ou **[!UICONTROL Visualizar contatos]** para ver quais clientes em potencial correspondem.
+1. Revise a visualização e ajuste os filtros, se necessário, antes de continuar com os pontos de contato.
 
 O direcionamento pode usar o tipo de atividade, a pontuação, a classificação e outros atributos disponíveis. Combine os critérios com [!DNL AND] ou [!DNL OR] e use operadores como &quot;é igual a&quot;, &quot;contém&quot;, &quot;maior que&quot;, &quot;menor que&quot; e &quot;entre&quot;.
 
-Para o Salesforce e o Microsoft Dynamics 365, o direcionamento também pode combinar campos de conta, contato e oportunidade que um administrador torna filtráveis no [mapeamento de entrada](integrations.md#map-crm-fields-inbound-mapping). Por exemplo, combine a função de um contato com o setor de sua conta associada e o estágio de uma oportunidade para direcionar os contatos certos.
+Todos os filtros das listas **[!UICONTROL Clientes potenciais]** e **[!UICONTROL Contatos]** podem ser usados no direcionamento, incluindo campos de conta, campos de oportunidade, status de Fluxo de Trabalho de Saída e categorias de contato, como **[!UICONTROL Meus Contatos de Oportunidade]**. Os administradores escolhem quais campos do CRM podem ser filtrados em [mapeamento de entrada](integrations.md#map-crm-fields-inbound-mapping).
+
+Todos os filtros de direcionamento são salvos com o fluxo de trabalho e aplicados automaticamente ao adicionar prospetos. [As sugestões de agente](tasks.md#agent-suggestions) usam o mesmo conjunto completo de filtros, portanto, os prospetos recomendados correspondem aos seus critérios de direcionamento.
 
 ### Inscrever clientes potenciais dos Destaques de marketing automaticamente
 
@@ -258,6 +259,25 @@ Use esses filtros para manter o foco dos fluxos de trabalho de saída e resultad
 
 * Em **[!UICONTROL Clientes Potenciais Envolvidos]** e **[!UICONTROL Desempenho]**, use **[!UICONTROL Inscrito por]** para filtrar clientes potenciais pela pessoa que os inscreveu. O filtro assume como padrão os clientes potenciais aos quais você se inscreveu.
 * Na guia **[!UICONTROL Procurar]**, use o filtro de compartilhamento para selecionar **[!UICONTROL Compartilhado(s) por mim]**, **[!UICONTROL Compartilhado(s) comigo]**, **[!UICONTROL Particular]** ou **[!UICONTROL Todos]**.
+
+## Revisar e enviar respostas de rascunho da IA
+
+Quando um cliente potencial responde a um email de Fluxo de Trabalho de Saída, você pode revisar, editar e enviar uma resposta de rascunho de IA diretamente da exibição **[!UICONTROL Clientes potenciais envolvidos]** do fluxo de trabalho, sem alternar para Tarefas. Para saber como o rascunho usa o contexto da conversa e quais mensagens precisam de uma resposta pessoal, consulte [Responder a um cliente potencial com uma sugestão de agente](tasks.md#reply-to-a-prospect-with-an-agent-suggestion).
+
+1. Abra o Fluxo de Trabalho de Saída e selecione **[!UICONTROL Prospetos envolvidos]**.
+1. Selecione a **[!UICONTROL resposta de rascunho de IA para revisar a marca]** ao lado de um cliente potencial.
+
+   O ícone de informações da tag explica que o cliente potencial respondeu e um rascunho está pronto. Você também pode encontrar o rascunho abaixo do email que ele responde nos pontos de contato do cliente potencial, rotulados **[!UICONTROL Responder a este email]**.
+
+1. Leia a mensagem do cliente potencial, exibida acima da resposta sugerida.
+1. Edite o rascunho conforme necessário.
+1. Selecione **[!UICONTROL Aprovar e enviar]** para enviar a resposta ou **[!UICONTROL Rejeitar resposta]** para descartá-la.
+
+   Uma confirmação é exibida após qualquer uma das ações.
+
+Para abrir a conversa por email completa, selecione **[!UICONTROL Exibir thread]**.
+
+Cada rascunho mostra seu status: **[!UICONTROL Revisão pendente]**, **[!UICONTROL Enviado]**, **[!UICONTROL Rejeitado]** ou **[!UICONTROL Cancelado]**. Somente o proprietário do cliente potencial pode aprovar ou rejeitar um rascunho. Se um rascunho não puder ser ativado, os botões não estarão disponíveis e uma mensagem explicará o motivo.
 
 ## Tratamento de respostas fora do escritório
 

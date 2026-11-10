@@ -9,15 +9,20 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 11%
+source-wordcount: '767'
+ht-degree: 10%
 ---
 # Notas de versão do [!DNL Adobe Marketo Qualifier]
 
 ## Próxima versão
 
+* Descreva quem você deseja alcançar em linguagem simples e transforme-o em cliente potencial do CRM e filtros de contato, use cada filtro de Clientes potenciais e Contatos no direcionamento de Fluxo de trabalho de saída e visualize os clientes potenciais correspondentes antes de salvar. [Saiba mais](outbound-workflows.md#step-2-configure-targeting-filters).
+* Filtre clientes potenciais por vários valores de uma só vez em campos de texto, como Título do trabalho e Email, com até cinco valores por filtro. [Saiba mais](prospects.md#filter-and-find-prospects).
+* Revise, edite e envie respostas de rascunho de IA para respostas de prospecto diretamente de um fluxo de trabalho de saída ou rejeite rascunhos que não se encaixem. [Saiba mais](outbound-workflows.md#review-and-send-ai-draft-replies).
+* Instale o [!DNL Adobe Marketo Qualifier] no Salesforce ou Microsoft Dynamics 365 e adicione prospetos a Fluxos de Trabalho de Saída ou campanhas do Marketo das exibições de lista e páginas de registro do Salesforce. [Saiba mais](crm-plugin-setup.md).
+* Introdução mais rápida a Públicos inteligentes (Beta): uma apresentação guiada, opções de adição rápida ao criar um público-alvo e listas mais claras com contagens de registros, uma coluna Conta que permanece na exibição e pontuações codificadas por cores. [Saiba mais](smart-audience.md).
 * Encontre e priorize as contas e os leads certos com público-alvo inteligente (Beta). Descreva as contas desejadas em linguagem simples, adicione dados de CRM e sinais de crescimento, analise clientes potenciais pontuados e adicione-os a um Fluxo de trabalho de saída. [Saiba mais](smart-audience.md).
 * Filtre contatos por campos de conta, junto com campos de contato e oportunidade, para encontrar os contatos certos e direcionar workflows de saída com mais precisão. [Saiba mais](prospects.md#filter-and-find-prospects).
 * Os contatos mostram sua conta associada e o nome do proprietário, e a página de um cliente potencial agora mostra 90 dias de atividade de marketing, antes 30. [Saiba mais](prospects.md#review-prospect-details).

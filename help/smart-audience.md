@@ -4,9 +4,9 @@ description: Saiba como usar o Público-alvo inteligente (Beta) para criar lista
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 badgeBeta: label="Beta" type="Informative"
-source-git-commit: bf94a2d28913093923f446025405339e4e64919c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1313'
 ht-degree: 1%
 ---
 
@@ -17,6 +17,8 @@ O Smart Audience (Beta) ajuda você a encontrar as contas e as pessoas que traba
 Trabalhe na exibição de lista com sua grade, filtros e botões ou use o chat para descrever o que deseja. Ambos trabalham na mesma lista: as alterações em um aparecem no outro. Se uma alteração não aparecer imediatamente, selecione **[!UICONTROL Atualizar]**.
 
 O rastreador de progresso na parte superior de cada lista mostra três estágios: **[!UICONTROL Criar lista de público-alvo inteligente]**, **[!UICONTROL Priorizar clientes em potencial]** e **[!UICONTROL Adicionar ao fluxo de trabalho de saída]**.
+
+A página de aterrissagem inclui um exemplo de reprodução automática do fluxo completo de cinco etapas, desde a descrição das contas até a adição de leads para um fluxo de trabalho de saída. Uma apresentação **[!UICONTROL Como funciona]** explica a jornada passo a passo e abre automaticamente quando você não tem listas. Você pode ignorar a apresentação e reabri-la a qualquer momento selecionando **[!UICONTROL Como funciona]**.
 
 ## Antes de começar
 
@@ -29,7 +31,10 @@ O público-alvo inteligente requer um Salesforce conectado ou um Microsoft Dynam
 Comece com uma descrição das contas que deseja acessar. A visualização não salva uma lista.
 
 1. Abra **[!UICONTROL Público-alvo inteligente]** e selecione **[!UICONTROL Novo público-alvo inteligente]** ou **[!UICONTROL Criar lista]**.
-1. No bate-papo, descreva as contas desejadas. Por exemplo, digite `Find healthcare accounts with revenue over $50M`.
+1. Use as opções de adição rápida e os prompts de exemplo na página de criação de público-alvo para iniciar sua solicitação ou descreva as contas desejadas no chat.
+
+   Por exemplo, digite `Find healthcare accounts with revenue over $50M`.
+
 1. Revise o número de contas correspondentes e a amostra na visualização.
 
 Sua solicitação pode incluir estes critérios:
@@ -58,6 +63,8 @@ Salve a visualização quando ela corresponder ao público-alvo desejado.
 1. Quando a visualização estiver pronta, peça ao chat para salvá-la como uma lista e dar um nome a ela.
 1. Revise as contas salvas na guia **[!UICONTROL Contas]**.
 
+As listas salvas são exibidas como cartões com detalhes de conta, lead e enriquecimento para ajudá-lo a escolher qual lista abrir.
+
 É possível renomear uma lista a partir de sua página. Para excluir uma lista, abra-a e selecione **[!UICONTROL Excluir lista de público-alvo inteligente]**.
 
 >[!CAUTION]
@@ -82,7 +89,9 @@ Para adicionar sinais de crescimento, selecione **[!UICONTROL Enriquecer contas]
 
 Por exemplo, digite `Which of these accounts have raised funding recently?` ou `Which of these accounts have had layoffs?`.
 
-Em listas grandes, a adição de um sinal pode levar alguns minutos. Siga o progresso mostrado na lista, revise cada nova coluna e mantenha-a ou descarte-a.
+Em listas grandes, a adição de um sinal pode levar alguns minutos. Siga o progresso mostrado na lista, revise cada nova coluna e mantenha-a ou descarte-a. Depois de adicionar uma coluna de enriquecimento, selecione **[!UICONTROL Mostrar coluna]** para exibi-la. A coluna é destacada brevemente para que você possa encontrá-la sem alterar a ordem da coluna.
+
+As guias **[!UICONTROL Contas]** e **[!UICONTROL Clientes potenciais]** mostram suas contagens de registro. A coluna **[!UICONTROL Conta]** permanece na exibição enquanto você rola horizontalmente pela lista.
 
 Para refinar e priorizar as contas:
 
@@ -109,9 +118,13 @@ Para uma solicitação de chat, digite `Find VP and Director level people at the
 
 Revise os resultados na guia **[!UICONTROL Clientes potenciais]**. Cada lead mostra o nome, cargo, conta, email, proprietário e pontuação. Filtre por prioridade, se um endereço de email está disponível, pontuação mínima ou máxima ou se o lead está em um fluxo de trabalho. A coluna **[!UICONTROL Raciocínio]** explica por que cada lead é classificado onde está.
 
+Se a guia **[!UICONTROL Clientes Potenciais]** estiver vazia, siga suas orientações para encontrar clientes em potencial para suas contas selecionadas.
+
 ### Como as pontuações funcionam
 
 As pontuações variam de 0 a 100. Uma pontuação mais alta indica melhor ajuste e mais disponibilidade para engajamento. Os mesmos dados produzem a mesma pontuação.
+
+As pontuações são codificadas por cores para ajudar as correspondências mais fortes a se destacarem. Analise a pontuação numérica e o raciocínio ao comparar contas ou leads em vez de depender apenas da cor.
 
 Uma pontuação combina:
 

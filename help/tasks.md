@@ -19,9 +19,9 @@ level_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
     internal-label: Customer engagement
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1105'
 ht-degree: 0%
 ---
 
@@ -109,7 +109,7 @@ As tarefas concluídas, ignoradas e canceladas são finais. Suas ações não es
 
 ## Sugestões do agente
 
-A guia **[!UICONTROL Sugestões do agente]** lista os clientes potenciais que correspondem aos critérios de direcionamento de um Fluxo de Trabalho de Saída e são recomendados para inscrição. Para ativar as recomendações, consulte [Fluxos de Trabalho de Saída](outbound-workflows.md).
+A guia **[!UICONTROL Sugestões de agente]** lista clientes potenciais recomendados para inscrição usando o conjunto completo de [filtros de direcionamento de Fluxo de Trabalho de Saída](outbound-workflows.md#step-2-configure-targeting-filters) configurados. Para ativar as recomendações, consulte [Fluxos de Trabalho de Saída](outbound-workflows.md).
 
 Para revisar uma sugestão no painel de trabalho, selecione-a:
 
@@ -139,6 +139,8 @@ Mensagens sobre preços, requisitos legais ou de segurança, respostas hostis e 
 1. Abra a sugestão de resposta e revise o thread completo e a resposta de rascunho.
 1. Para criar outro rascunho, edite a resposta ou selecione **[!UICONTROL Gerar com IA]**.
 1. Para enviar a resposta e continuar o Fluxo de Trabalho de Saída do cliente potencial, selecione **[!UICONTROL Aprovar e enviar]**.
+
+Você também pode [revisar, editar, enviar ou rejeitar respostas de rascunho de IA](outbound-workflows.md#review-and-send-ai-draft-replies) da exibição **[!UICONTROL Clientes potenciais]** do fluxo de trabalho de saída.
 
 ## Concluir tarefas de um fluxo de trabalho de saída
 

@@ -1,5 +1,5 @@
 ---
-title: Configurações de administração
+title: Configurações do administrador
 description: Saiba como gerenciar campos do CRM, sincronização de atividades, recusa de email e outras configurações de administração do [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
@@ -26,13 +26,13 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1369'
 ht-degree: 0%
 ---
 
-# Configurações de administração
+# Configurações do administrador
 
 Use as **[!UICONTROL Configurações de Administração]** para configurar as integrações de CRM, gerenciar o Centro de Conhecimento e configurar a recusa de email.
 
@@ -49,7 +49,7 @@ Para configurar conexões do CRM, mapeamento de campos e sincronização de ativ
 O Marketo Qualifier funciona com seu CRM das seguintes maneiras:
 
 * **Consultas do MCP do CRM** — O Account Qualification Agent consulta dados do CRM ao vivo para que as respostas e os insights reflitam o estado atual de seus registros.
-* **Plug-in incorporado** — o plug-in do CRM exibe [!DNL Marketo Sales Insights] insights e dados de agente no seu CRM. Use o plug-in para adicionar um cliente potencial a [!DNL Marketo Qualifier].
+* **Plug-in incorporado** — o plug-in do CRM exibe [!DNL Marketo Sales Insights] insights e dados de agente no seu CRM. Use o plug-in para adicionar um cliente potencial a [!DNL Marketo Qualifier]. Para instalação e configuração de ação do Salesforce, consulte [Incorporar o Marketo Qualifier no seu CRM](crm-plugin-setup.md).
 * **Sincronização de atividade** — Quando um administrador ativa a **[!UICONTROL Sincronização de atividade]**, as atividades de alcance externo são sincronizadas com o CRM e o Marketo.
 
 ### Priorizar clientes em potencial no plug-in do CRM
