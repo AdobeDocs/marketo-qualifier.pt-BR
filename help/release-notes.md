@@ -9,14 +9,14 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: f7b2d254601b6dd9a00513dae850ae22a5480b87
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '768'
 ht-degree: 10%
 ---
 # Notas de versão do [!DNL Adobe Marketo Qualifier]
 
-## Próxima versão
+## Versão de novembro de 2026
 
 * Descreva quem você deseja alcançar em linguagem simples e transforme-o em cliente potencial do CRM e filtros de contato, use cada filtro de Clientes potenciais e Contatos no direcionamento de Fluxo de trabalho de saída e visualize os clientes potenciais correspondentes antes de salvar. [Saiba mais](outbound-workflows.md#step-2-configure-targeting-filters).
 * Filtre clientes potenciais por vários valores de uma só vez em campos de texto, como Título do trabalho e Email, com até cinco valores por filtro. [Saiba mais](prospects.md#filter-and-find-prospects).
