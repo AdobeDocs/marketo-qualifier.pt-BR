@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1530'
 ht-degree: 1%
 ---
 
@@ -37,7 +37,7 @@ Conecte o Outlook para enviar emails, reconhecer respostas de clientes potenciai
 
 Este artigo explica como conectar o Outlook, gerenciar uma conexão de CRM, mapear campos, sincronizar atividades e configurar a opção de não participação de email. Para conectar um CRM pela primeira vez, consulte [Introdução](getting-started.md#connect-your-crm).
 
-Para disponibilizar insights e ações do Marketo Qualifier no Salesforce ou no Microsoft Dynamics 365, consulte [Incorporar o Marketo Qualifier no seu CRM](crm-plugin-setup.md).
+Para disponibilizar insights e ações do Marketo Qualifier no Salesforce ou no Microsoft Dynamics 365, consulte [Configurar o plug-in do CRM](crm-plugin-setup.md).
 
 >[!IMPORTANT]
 >
